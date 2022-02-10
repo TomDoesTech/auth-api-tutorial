@@ -1,0 +1,9 @@
+import {{titleCase name}}Model, { {{titleCase name}} } from "../model/{{snakeCase name}}.model";
+
+export function create{{titleCase name}}(input: Partial<{{titleCase name}}>) {
+  return {{titleCase name}}Model.create(input);
+}
+
+export function find{{titleCase name}}ById(id: string) {
+  return {{titleCase name}}Model.findById(id);
+}

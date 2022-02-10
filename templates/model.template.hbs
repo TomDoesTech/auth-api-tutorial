@@ -1,0 +1,14 @@
+import { getModelForClass, prop } from "@typegoose/typegoose";
+
+export class {{titleCase name}} {
+    @prop({required: true})
+    name: string
+}
+
+const {{titleCase name}}Model = getModelForClass({{titleCase name}}, {
+  schemaOptions: {
+    timestamps: true,
+  },
+});
+
+export default {{titleCase name}}Model;

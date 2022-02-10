@@ -1,0 +1,11 @@
+import { Request, Response } from "express";
+import { create{{titleCase name}}, find{{titleCase name}}ById } from "../service/{{snakeCase name}}.service"
+
+export async function create{{titleCase name}}Handler(req: Request, res: Response){
+
+    const body = req.body;
+
+    const {{ name }} = await create{{titleCase name}}(body);
+
+    return res.send({{ name }})
+}

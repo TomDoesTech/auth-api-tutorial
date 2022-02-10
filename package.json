@@ -5,7 +5,8 @@
   "author": "Tom Nagle",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "gen": "plop"
   },
   "devDependencies": {
     "@types/config": "^0.0.40",
@@ -14,6 +15,7 @@
     "@types/lodash": "^4.14.178",
     "@types/nodemailer": "^6.4.4",
     "pino-pretty": "^7.3.0",
+    "plop": "^3.0.5",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.5.4"
   },
